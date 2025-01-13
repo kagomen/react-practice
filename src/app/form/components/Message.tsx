@@ -4,7 +4,6 @@ interface MessageProps {
 }
 
 export default function Message({ status, message }: MessageProps) {
-  console.log(message)
   return (
     <div>
       <p>

@@ -16,10 +16,7 @@ export default function Form() {
     <form action={formAction}>
       <input name="message" />
       <Button />
-      <Message message={state.message} status={state.status} />
+      <Message {...state} />
     </form>
   )
 }
-
-// 注意
-// useFormStatus は同じコンポーネントでレンダーされた <form> のステータス情報を返さない
