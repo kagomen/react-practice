@@ -3,7 +3,7 @@ type Props = {
   params: Promise<{ slug: string }>
 }
 
-// 引数の順番は何でも良い代わりに、名前は一致してないとダメそう
+// 当たり前だが、引数がオブジェクトの時はプロパティの順は関係ない。keyで参照されるため。
 export default async function Page({ searchParams, params }: Props) {
   const { slug } = await params
   const data = await searchParams
